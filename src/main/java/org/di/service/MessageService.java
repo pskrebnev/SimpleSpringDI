@@ -1,4 +1,4 @@
-package org.di;
+package org.di.service;
 
 /**
  * Dependency injection
