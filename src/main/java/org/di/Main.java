@@ -11,7 +11,7 @@ public class Main {
 
   public static void main(String[] args) {
     // Spring app context
-    try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
+    try (AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
         AppConfig.class)) {
       System.out.println("Spring context initialized successfully!");
 
