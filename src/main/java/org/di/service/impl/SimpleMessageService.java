@@ -1,5 +1,6 @@
 package org.di.service.impl;
 
+import org.di.service.MessageService;
 import org.springframework.stereotype.Service;
 
 /**
