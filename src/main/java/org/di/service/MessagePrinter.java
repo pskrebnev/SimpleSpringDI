@@ -13,7 +13,7 @@ public class MessagePrinter {
 
   /**
    * Constructor Injection of the 'MessageService'
-   * @param 'messageService'
+   * @param messageService The message service to use
    */
   @Autowired
   public MessagePrinter(MessageService messageService) {
