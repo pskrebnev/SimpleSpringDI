@@ -1,5 +1,6 @@
 package org.di.config;
 
+import org.di.service.MessagePrinter;
 import org.di.service.MessageService;
 import org.di.service.impl.SimpleMessageService;
 import org.springframework.context.annotation.Bean;
@@ -23,8 +24,7 @@ public class AppConfig {
    * MessagePrinter bean with Injected MessageService
    */
   @Bean
-  public MessagePrinter simpleMessageService() {
-    return new SimpleMessageService();
+  public MessagePrinter messagePrinter(MessageService messageService) {
+    return new MessagePrinter(messageService);
   }
-
 }
