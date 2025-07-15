@@ -19,4 +19,11 @@ public class MessagePrinter {
   public MessagePrinter(MessageService messageService) {
     this.messageService = messageService;
   }
+
+  /**
+   * Prints the message from the Injected 'MessageService'
+   */
+  public void printMessage() {
+    System.out.println(messageService.getMessage());
+  }
 }
